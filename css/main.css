@@ -1,0 +1,21 @@
+html {
+	font-size: 62.75%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+
+.content {
+	max-width: 980px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
