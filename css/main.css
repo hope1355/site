@@ -13,10 +13,38 @@ html {
     clear:both;
 }
 
-.content {
+.container {
 	max-width: 980px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
 
+/* HEADER */
+
+header {
+	height: 1000px;
+	padding: 10px;
+	line-height: 100px;
+}
+
+.header--logotype {
+	float: left;
+}
+
+.header--logotype img {
+	height: 60px;
+}
+
+.header--panel {
+	float: right;	
+}
+
+.header--panel input {
+	float: right;
+}
+
+.header--panel img {
+	height: 30px;
+	float: right;
+}
 
