@@ -7,6 +7,50 @@ html {
 	box-sizing: inherit;
 }
 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strong, sub, sup, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
 .clearfix:after {
     content:" ";
     display:table;
@@ -22,29 +66,115 @@ html {
 /* HEADER */
 
 header {
-	height: 1000px;
-	padding: 10px;
-	line-height: 100px;
+	height: 60px;
+	background-color: #009DDA;
+	line-height: 60px;
+	vertical-align: middle;
+	margin-bottom: 40px;
 }
 
-.header--logotype {
+.logo { 
+	padding: 10px 0;
 	float: left;
 }
 
-.header--logotype img {
+.logo img {
+	display: block;
+	height: 40px;
+	margin-right: 55px;	
+}
+
+.header-menu {
+	float: left;
+}
+
+.header-menu li {
+	display: inline-block;
+}
+
+.header-menu li + li {margin-left: 30px;}
+
+.header-menu a {
+	color: #fff;
+}
+
+.header-menu a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+.header-menu .active {
+	color: #000;
+}
+
+.header-panel {
+	float: right;
+	padding: 10px 0;
 	height: 60px;
 }
 
-.header--panel {
-	float: right;	
-}
-
-.header--panel input {
-	float: right;
-}
-
-.header--panel img {
+.header-panel img {
 	height: 30px;
+	display: inline-block;
+}
+
+.header-panel img {
+	margin-left: 20px;
+}
+
+/* ARTICLE */
+
+.article-wrapper {
+	float: left;
+	margin-right: 20px;
+}
+
+article {
+	max-width: 700px;
+	max-height: 221px;
+	border: 1px solid #000;
+	margin-bottom: 20px;
+	background-color: #D8D8D8;
+
+}
+
+.article-poster {
+	float: left;
+}
+
+.article-poster img {
+	height: 220px;
+	margin-right: 20px;
+}
+
+.article-body {
+	padding: 20px 40px 20px 0;
+}
+
+.article-title {
+	font: 600 20px sans-serif;
+	padding-bottom: 10px;
+}
+
+.article-date {
+	font-size: 13px;	
+}
+
+.article-descr {
+	font-size: 17px;
+	padding-top: 20px;
+}
+
+/* SIDEBAR */
+
+.sidebar-wrapper {
 	float: right;
 }
 
+.paper-poster img {
+	height: 70px;
+}
+
+.top-paper {
+	float: left;
+}
